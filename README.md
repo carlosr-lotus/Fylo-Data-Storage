@@ -8,3 +8,15 @@ Fylo Data Storage é um website criado com o intuito de simular um sistema de ad
 
 - Project created just to be a part of my portfolio.
 - Projeto criado para fazer parte de meu portfólio.
+
+# Website's Design
+
+- The images below are screenshots/ As imagens abaixo são screenshots.
+
+- Desktop
+![](design/desktop-website-design.png)
+
+
+- Mobile
+
+![](design/mobile-website-design.png)
