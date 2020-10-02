@@ -1,0 +1,242 @@
+/* Global Configurations */
+:root {
+    /* Colors */
+
+    /* Primary */
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+    /* Neutral
+    - Pale Blue: hsl(243, 100%, 93%) - Grayish Blue: hsl(229, 7%, 55%) - Dark Blue: hsl(228, 56%, 26%) - Very Dark Blue: hsl(229, 57%, 11%) */
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    color: #fff;
+
+    font-family: 'Raleway',
+        sans-serif;
+
+    background-image: url(../images/bg-mobile.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    max-width: 700px;
+    margin: 0 auto;
+
+
+    font-size: 1.5rem;
+}
+
+/* First Box Configurations */
+.box {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+
+
+    margin-top: 7rem;
+
+    background-color: var(--Dark-Blue);
+    border-radius: .7rem;
+    border-top-right-radius: 6.5rem;
+}
+
+/* User Icons Options ( document/folder/upload ) */
+.option-icons {
+    margin-top: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.option-icons img {
+    margin: 0 .5rem;
+    padding: .5rem;
+
+    background-color: black;
+    border-radius: .5rem;
+}
+
+/* ***********
+Second Box Configurations
+   ***********  */
+
+.box2 {
+    width: 90vw;
+    background-color: var(--Dark-Blue);
+    margin-top: 1.5rem;
+    border-radius: .7rem;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box2 p {
+    font-size: 1.2rem;
+    margin: 1.2rem .5rem;
+
+    color: var(--Pale-Blue);
+}
+
+/* Apply to first <p> inside box2 */
+.box2>p {
+    font-size: 1rem;
+    margin: 4rem .5rem 0 .5rem;
+}
+
+.box2 .space-used {
+    font-weight: 700;
+}
+
+.storage {
+    width: 90%;
+    margin-top: 2rem;
+    height: 5rem;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.storage-bar {
+    background: var(--Very-Dark-Blue);
+    height: 1.1rem;
+    width: 57%;
+
+    border-radius: .7rem;
+}
+
+.storage-filled {
+    background: linear-gradient(to left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 80%;
+    height: .9rem;
+    border-radius: .9rem;
+
+    margin-top: .1rem;
+}
+
+.storage-bar-ball {
+    background-color: #fff;
+    width: 10%;
+    height: .8rem;
+    border-radius: .9rem;
+
+    float: right
+}
+
+.storage-left {
+    position: relative;
+    top: 2rem;
+    z-index: 1;
+    padding: .1rem .5rem;
+    margin-bottom: 1.5rem;
+    width: 10.5rem;
+
+    background-color: #fff;
+
+    border-radius: .7rem;
+
+    text-align: center;
+}
+
+.storage-left p {
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--Grayish-Blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.storage-left .space-left {
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    color: var(--Very-Dark-Blue);
+}
+
+@media (min-width: 701px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--Very-Dark-Blue);
+        background-image: url(../images/bg-desktop.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 90vw;
+        height: 90vh;
+        max-width: 940px;
+        margin: 0 auto;
+
+
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .box,
+    .box2 {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .box {
+
+        margin-right: 1.2rem;
+    }
+
+    .box2 {
+        padding: 1.5rem;
+        padding-bottom: 2.5rem;
+        height: 10.2rem;
+    }
+
+    .storage-left {
+        position: relative;
+        top: 2rem;
+        z-index: 1;
+        padding: .1rem .5rem;
+        margin-bottom: 1.5rem;
+        width: 10.5rem;
+
+        background-color: #fff;
+
+        border-radius: .7rem;
+
+        text-align: center;
+    }
+
+
+}
