@@ -19,4 +19,4 @@ Fylo Data Storage é um website criado com o intuito de simular um sistema de ad
 
 - Mobile
 
-![](design/mobile-website-design.png)
+ ![](design/mobile-website-design.png)
